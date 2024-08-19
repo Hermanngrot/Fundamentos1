@@ -1,0 +1,32 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+	string nombre;
+	float horasdetrabajo;
+	float salario;
+	float salariofinal;
+	float precioporhora;
+	cout<<"Ingrese su nombre: ";
+	cin>>nombre;
+	cout<<"Ingrese las horas de trabajo: ";
+	cin>>horasdetrabajo;
+	cout<<"Ingrese el precio por hora de trabajo: ";
+	cin>>precioporhora;
+	salario=horasdetrabajo*precioporhora;
+	    if(salario<=8272){
+	        salariofinal=salario;
+	    }
+	    else{
+	        salariofinal=salario-(salario*0.13);
+        }
+    cout<<"El salario es: "<<salariofinal;
+}
