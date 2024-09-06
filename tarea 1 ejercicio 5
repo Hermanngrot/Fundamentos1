@@ -1,0 +1,29 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+    int y1,x1,y2,x2,x3,y3,a,b,c,ca,cb,r;
+    cout<<"Ingrese las coordenadas del primer punto(formato:x,y Presione enter luego de cada coordenada): ";
+    cin>>x1>>y1;
+    cout<<"Ingrese las coordenadas del segundo punto(formato:x,y Presione enter luego de cada coordenada): ";
+    cin>>x2>>y2;
+    cout<<"Ingrese las coordenadas del tercer punto(formato:x,y Presione enter luego de cada coordenada): ";
+    cin>>x3>>y3;
+    a=((2*(y3-y1)*(x1*x1-x2*x2+y1*y1-y2*y2))+(-1*(2*(y2-y1)*(x1*x1-x3*x3+y1*y1-y3*y3))))/((-1*(2*(y3-y1)*(2*x1-2*x2)))+(2*(y2-y1)*(2*x1-2*x3)));
+    b=((x1*x1-x2*x2+y1*y1-y2*y2+2*a*x1-2*a*x2))/(2*(y2-y1));
+    c=-1*(x1*x1+y1*y1+2*a*x1+2*b*y1);
+    ca=-1*a;
+    cb=b*-1;
+    r=sqrt(a*a+b*b-c);
+    cout<<"La cordenadas son: "<<"("<<ca<<" , "<<cb<<")"<<endl;
+    cout<<"EL radio es: "<<r;
+    return 0;
+}
