@@ -1,0 +1,48 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+int main() {
+	int y,x;
+	cout<<"Ingrese las cordenadas del punto en formato de (x,y) (Presione enter despues de cada cordenada): ";
+	cin>>x>>y;
+	if ((x>0)&&(y>0)) {
+		cout<<"El punto se encuentra en el primer cuadrante";
+	}
+	else {
+		if((x>0)&&(y<0)) {
+			cout<<"El punto se encuentra en el cuarto cuadrante";
+		}
+		else {
+		    if((x<0)&&(y<0))
+		    cout<<"El punto se encuentra en el tercer cuadrante ";
+		    else{
+		        if ((x<0)&&(y>0))
+		        cout<<"El punto se encuentra en el segundo cuadrante";
+		        else
+		        cout<<"El punto no se encuentra en ningun cuadrante"<<endl;
+		        if ((x==0)&&(y==0))
+		        cout<<"El punto se encuentra en el cero cero o origen";
+		        else{
+		            if (x==0)
+		            cout<<"El punto se encuentra en el eje y";
+		            else {
+		                if (y==0)
+		                cout<<"El punto se encuentra en el eje x";
+		                else
+		                cout<<"El Punto no se encuentra en el plano cartesiano ";
+		                
+		            }
+		        }
+		    }
+		}
+	}
+
+return 0;
+}
