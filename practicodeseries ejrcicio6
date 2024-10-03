@@ -1,0 +1,29 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+    float n,suma=0;
+    int x;
+    do {
+    cout<<"Ingrese el valor de la variable n que desea sumar en la sumatoria: ";
+    cin>>n;
+    }while (n<=0);
+    cout<<"Ingrese el valor de x: ";
+    cin>>x;
+    for(int i=1;i<=n;i++){
+        suma=suma + pow(x,i);
+        cout<<pow(x,i)<<"+";
+    }
+    cout<<"La sumatoria es de: "<<suma;
+    
+
+    return 0;
+}
