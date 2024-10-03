@@ -13,7 +13,7 @@ using namespace std;
 
 int main()
 {
-    float x,suma=0;
+    double x,suma=0;
     int n,signo=1,f=1;
     do {
     cout<<"Ingrese el numero maximo: ";
