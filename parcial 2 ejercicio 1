@@ -1,1 +1,26 @@
+/**************************
+Calcular la serie S=x^1+x^2+x^3....
+***************************/
+#include <iostream>
+#include <math.h>
+using namespace std;
 
+int main()
+{
+    int x,n,s=0,i=1;
+    do{
+    cout<<"Ingrese x: ";
+    cin>>x;
+    }
+    while(x<0);
+    do{
+        cout<<"Ingrese la cantidad de terminos: ";
+        cin>>n;}
+    while (n<0);    
+    while (i<=n){
+        s=s+pow(x,i); 
+        i++;
+    }
+    cout<<"La suma es: "<<s;
+    return 0;
+}
